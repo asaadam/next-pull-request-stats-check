@@ -21,7 +21,6 @@ jobs:
         run: yarn install
       - name : build
         run: yarn build
-      - name: Analyze bundle sizes
       - uses: transferwise/actions-next-bundle-analyzer@master
         with:
           workflow-id: pull_request_stats.yml
