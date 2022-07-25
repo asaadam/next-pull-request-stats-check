@@ -21,5 +21,10 @@ jobs:
         run: yarn install
       - name : build
         run: yarn build
-
+      - uses: transferwise/actions-next-bundle-analyzer@master
+        with:
+          workflow-id: pull_request_stats.yml
+          base-branch: main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
