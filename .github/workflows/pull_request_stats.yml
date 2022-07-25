@@ -18,7 +18,7 @@ jobs:
           check-latest: true
           yarn: true
       - name : install dependencies
-        run: yarn install
+        run: yarn 
       - name : build
         run: yarn build
       - uses: transferwise/actions-next-bundle-analyzer@master
